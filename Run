@@ -1,3 +1,4 @@
+
 #!/bin/bash
 cd $(cd $(dirname $0); pwd)
 echo -e '\e[1m\e[31m
@@ -23,7 +24,7 @@ sudo apt-get install tmux
 sudo apt-get install luarocks
 sudo apt-get install screen
 sudo apt install zip
-sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.3 liblua5.3-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev
+sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev
 sudo apt-get update
 sudo apt-get install
 sudo apt-get install upstart-sysv
@@ -41,20 +42,20 @@ sudo apt-get install lua-lgi -y
 sudo apt-get install software-properties-common -y
 sudo apt-get install libnotify-dev -y 
 sudo apt-get install lua-space -y
-sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.3 liblua5.3-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev -y
+sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev -y
 sudo apt-get update 
 sudo apt-get upgrade -y
 cd ..
 rm -rf luarocks*
 unzip BANDATELE.zip
-sudo mv tdlua.so /usr/lib/x86_64-linux-gnu/lua/5.3/tdlua.so
-sudo mv luatele.lua /usr/local/share/lua/5.3/luatele.lua
-sudo lua5.3 black.lua
+sudo mv tdlua.so /usr/lib/x86_64-linux-gnu/lua/5.2/tdlua.so
+sudo mv luatele.lua /usr/local/share/lua/5.2/luatele.lua
+sudo lua5.2 black.lua
 ;;
 2)
 echo -e "\e[1m\e[32mThe bot is running now : جاري تشغيل البوت الان : \e[0m"
 sleep 2
 rm -rf BANDATELE.zip
-sudo lua5.3 black.lua
+sudo lua5.2 black.lua
 ;;
 esac
